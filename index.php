@@ -61,7 +61,7 @@
         echo '<h2>Pegando nomes do índice '.$from.' até o índice 9</h2>';
         $usuarios_array = retornarTodosUsuarios($usuarios);
         $novo_array = [];
-        for ($i = $from; ($i < count($usuarios_array) && ($i < ($i+10) ) ) ; $i++) { 
+        for ($i = $from; ($i < count($usuarios_array) && ($i < ($i+9) ) ) ; $i++) { 
             array_push($novo_array, $usuarios_array[$i]->nome); 
         }
         echo '<pre>'; 
